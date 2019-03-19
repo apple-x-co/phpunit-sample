@@ -20,6 +20,6 @@ class DataProviderObjectTest extends \PHPUnit\Framework\TestCase
 
     public function additionProvider()
     {
-        return new CsvFileIterator('./tests/DataProviderObjectTest.csv');
+        return new CsvFileIterator(__DIR__ . '/DataProviderObjectTest.csv');
     }
 }
